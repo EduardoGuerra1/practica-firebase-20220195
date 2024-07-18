@@ -17,7 +17,7 @@ export default function Registro() {
     const Registrar = async () => {
         try {
             if (!correo || !clave || !nombre || !telefono) {
-                Alert.alert('Campos Incompletos', 'Rellene todos los campos.');
+                Alert.alert('Campos incompletos', 'Rellene todos los campos.');
                 return;
             }
             const userCredential = await createUserWithEmailAndPassword(auth, correo, clave);

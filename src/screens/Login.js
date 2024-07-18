@@ -35,7 +35,7 @@ export default function Login() {
             const userDoc = await getDoc(userDocRef);
 
             if (userDoc.exists()) {
-                Alert.alert('Inicio de sesión exitoso', 'El usuario ha iniciado sesión correctamente.');
+                Alert.alert('Inicio de sesión exitoso ', 'El usuario ha iniciado sesión correctamente.');
                 // Redirigir a la siguiente pantalla
                 navigation.navigate('Home');
             } else {
